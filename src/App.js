@@ -102,7 +102,6 @@ const selectedStyle = {
   backgroundColor: "black",
   borderRadius: "40px"
 };
-// const shopping = ["Milk", "Oil", "Coconut", "tea"];
 export default function App() {
   var [emojiMeaning, set] = useState("");
   var [showEmoji, setEmoji] = useState("");
@@ -131,16 +130,7 @@ export default function App() {
     set(emojiMeaning);
     setEmoji(showEmoji);
   }
-  // console.log(emojikey);
-  // function getBg(index){
-  //   if(index%2 === 0){
-  //     return "blue";
-  //   }
-  //   return "red";
-  // }
-  // function listClickHandler(index){
-  // console.log("clicked" , index);
-  // }
+
   return (
     <div className="App">
       <h1>EmojiRecog{"🔍"}</h1>
@@ -151,23 +141,12 @@ export default function App() {
       <input
         type="text"
         onChange={emojiChangeHandler}
-        value={showEmoji}
+        // value={showEmoji}
         placeholder="Enter any emoji you want to search"
       />
       <p style={{ fontSize: "1.8rem"}}>
         {emojiMeaning} {showEmoji}
       </p>
-      {/* <p>{emojikey}</p>*/}
-      {/* <ol>
-        {shopping.map((item, index) => {
-          return (
-            <div>
-              <li key={item} onClick={()=>listClickHandler(index)} 
-              style={{backgroundColor: getBg(index)}}>{item}</li>
-            </div>
-          );
-        })}
-      </ol> */}
       <div style={{ margin: "0 5rem", paddingBottom:"5rem" }}>
         <h4>Select one of your favourite emoji and know its meaning</h4>
         {emojikey.map((item) => {
