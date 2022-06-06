@@ -109,7 +109,7 @@ export default function App() {
 
 
   function emojiChangeHandler(e) {
-    var showEmoji = e.target.value;;
+    var showEmoji = e.target.value;
     if(showEmoji){
       emojiClickHandler(showEmoji);
     }
@@ -151,6 +151,7 @@ export default function App() {
       <input
         type="text"
         onChange={emojiChangeHandler}
+        value={showEmoji}
         placeholder="Enter any emoji you want to search"
       />
       <p style={{ fontSize: "1.8rem"}}>
