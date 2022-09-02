@@ -9,9 +9,11 @@ There are list of emoji you can try selecting one and see its meaning.
 - CSS3
 - ReactJS
 
-### Hosted on - Netlify
+### Hosted on 
+- Netlify
 
-### Preview Demo - https://divya-gavandi-emojirecognizer.netlify.app
+### Preview Demo 
+- https://divya-gavandi-emojirecognizer.netlify.app
 
 
 you can add your own favicon using <link> in .html
